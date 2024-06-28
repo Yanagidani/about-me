@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*headerボタン*/
+.btn-menu {
+    position:absolute;
+    top: 1px;
+    right: 1px;
+    border: 1px;
+    color: 1px;
+    padding: 1px;
+}
+.main-nav {
+    background: var(--darkgray);
+    width: 1%;
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    right: 0;
+    overflow: hidden;
+}

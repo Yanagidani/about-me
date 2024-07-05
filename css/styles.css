@@ -1,20 +1,35 @@
 @charset "UTF-8";
 
-/*headerボタン*/
-.btn-menu {
-    position:absolute;
-    top: 1px;
-    right: 1px;
-    border: 1px;
-    color: 1px;
-    padding: 1px;
+.header {
+    display: flex;
+    width: 20rem;
+    height: 10rem;
 }
 .main-nav {
-    background: var(--darkgray);
-    width: 1%;
-    position: absolute;
-    z-index: 2;
-    top: 1px;
-    right: 0;
-    overflow: hidden;
+    display: flex;
+    width: 20rem;
+    height: 10rem;
+    text-align: right;
+    font-size: 2rem;
+    gap: 20px;
+    justify-content: flex-end;
+
+}
+.main-nav a {
+    color: #1A1F4D
+}
+.main-nav a:hover {
+    color: #845898
+}
+
+
+
+.about {
+    font-size: 2rem;
+    padding-left: 2rem;
+
+}
+.about p {
+    font-size: 2rem;
+    padding-left: 5rem;
 }

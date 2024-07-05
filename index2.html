@@ -1,0 +1,100 @@
+<header class="page-header">
+    <h1 class="align=flex-start">
+        <a href="index.html">About-me</a>
+    </h1>
+
+
+    .btn-menu {
+        position:absolute;
+        width: 10%;
+        top: 14px;
+        height: 5%;
+        right: 14px;
+        border: 1px solid #d5c6ec;
+        color: var(--white);
+        padding: .5rem 1rem;
+    }
+    .main-nav {
+        background: var(--darkgray);
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        right: 0;
+        overflow: hidden;
+    }
+    .main-nav li {
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .main-nav a {
+        display: block;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('自己紹介サイトへようこそ！');
+    });
+
+
+
+    スライドしてくるメニューの作るやつ ↓
+    <div class="page-header">
+        <header>
+            <h1>About-me</h1>
+            <button class="menu-toggle">Menu</button>
+        </header>
+        <nav class="btn-menu">   <!--横にスライドするメニューバーの作成-->
+            <ul>
+                <li><a href="#about">  </a></li>
+                <li><a href="#interest">  </a></li>
+                <li><a href="#hobby">  </a></li>
+            </ul>
+        </nav>
+
+        .page-header {
+            display: flex;
+            height: 10%;
+        }
+        
+        .header {
+            background-color: #bcbcc8
+            color #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .btn-menu {
+            background-color: #f0f0f0;
+            width: 250px; /* メニューの幅 */
+            transform: translateX(-250px); /* 初期状態では左側に隠れている */
+            transition: transform 0.3s ease-in-out;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            overflow-y: auto; /* メニューが画面をはみ出た場合にスクロール */
+        }
+        .btn-menu.active {
+            transform: translateX(0); /* メニューを表示 */
+        }
+        .btn-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .btn-menu li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .btn-menu li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.btn-menu').classList.toggle('active');
+        });

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*ヘッダー*/
 .header {
     display: flex;
     width: 20rem;
@@ -32,4 +33,11 @@
 .about p {
     font-size: 2rem;
     padding-left: 5rem;
+}
+
+/*フッター*/
+.page-footer {
+    background-color: #845898;
+    background-size: cover;
+
 }

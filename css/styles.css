@@ -6,7 +6,7 @@
     width: 20rem;
     height: 10rem;
 }
-.main-nav {
+.container {
     display: flex;
     width: 20rem;
     height: 10rem;
@@ -16,10 +16,10 @@
     justify-content: flex-end;
 
 }
-.main-nav a {
+.container a {
     color: #1A1F4D
 }
-.main-nav a:hover {
+.container a:hover {
     color: #845898
 }
 
@@ -35,6 +35,20 @@
     padding-left: 5rem;
 }
 
+table {
+    margin: 3.5rem 0;
+    width: 100%;
+}
+
+th {
+    background: #bcbcc8;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+td {
+    padding: .75rem 1rem 1.75rem;
+}
 /*フッター*/
 .page-footer {
     background-color: #845898;

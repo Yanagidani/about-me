@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*共通部分*/
+html {
+    font-size: 100%;
+}
+
 /*ヘッダー*/
 .header {
     display: flex;
@@ -94,3 +99,7 @@
     color: #1A1F4D
 }
 
+.body {
+    background-image: url('Image.png');
+    background-size: cover;
+}

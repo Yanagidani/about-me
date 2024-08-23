@@ -2,7 +2,13 @@
 
 /*共通部分*/
 html {
-    font-size: 100%;
+    font-size: 250%;
+}
+
+.body {
+    background-image: url('Image.png');
+    background-size: cover;
+    text-align: center;
 }
 
 /*ヘッダー*/
@@ -68,6 +74,7 @@ html {
 .table {
     margin: 3.5rem 0;
     width: 100%;
+    text-align: center;
 }
 
 
@@ -88,10 +95,7 @@ html {
 
 
 .container a {
-    color: #1A1F4D
+    color: #bcbcc8
 }
 
-.body {
-    background-image: url('Image.png');
-    background-size: cover;
-}
+

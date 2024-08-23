@@ -5,7 +5,60 @@
     display: flex;
     width: 20rem;
     height: 10rem;
+    background-color: #845898;
+    background-size: cover;
 }
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+.main-nav a {
+    color: #1A1F4D
+}
+.main-nav a:hover {
+    color: #845898
+}
+
+
+
+
+
+
+.about {
+    font-size: 2rem;
+    padding-left: 2rem;
+
+
+}
+.about p {
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+.p1 {
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+.p2 {
+    font-size: 5rem;
+    padding-left: 5rem;
+}
+.p3 {
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+
+
+/*フッター*/
+.page-footer {
+    background-color: #845898;
+    background-size: cover;
+
+
+}
+
+
 .container {
     display: flex;
     width: 20rem;
@@ -14,44 +67,30 @@
     font-size: 2rem;
     gap: 20px;
     justify-content: flex-end;
-
 }
-.container a {
-    color: #1A1F4D
-}
-.container a:hover {
-    color: #845898
-}
-
-
-
-.about {
-    font-size: 2rem;
-    padding-left: 2rem;
-
-}
-.about p {
-    font-size: 2rem;
-    padding-left: 5rem;
-}
-
-table {
+.table {
     margin: 3.5rem 0;
     width: 100%;
 }
 
-th {
+
+
+
+.th {
     background: #bcbcc8;
     vertical-align: middle;
     padding: 10px 0;
 }
 
-td {
+
+
+
+.td {
     padding: .75rem 1rem 1.75rem;
 }
-/*フッター*/
-.page-footer {
-    background-color: #845898;
-    background-size: cover;
 
+
+.container a {
+    color: #1A1F4D
 }
+

@@ -1,56 +1,134 @@
-/* 全体のスタイル */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+
+/*共通部分*/
+html {
+    font-size: 170%;
 }
 
-/* ヘッダーのスタイル */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    position: fixed;
+.body {
+    background-image: url('Image.png');
+    background-size: cover;
+    text-align: center;
+}
+
+/*ヘッダー*/
+.header {
+    display: flex;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    height: 10rem;
+    background-color: #333;
+    background-size: cover;
+}
+/* コンテナのスタイル */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* ロゴとナビゲーションを両端に配置 */
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
+/* ナビゲーションコンテナのスタイル */
+.nav-container {
+    background: #333; /* ナビゲーションの背景色 */
+    border-radius: 5px; /* ボックスの角を丸くする */
+    padding: 10px 20px; /* ボックス内の余白 */
 }
 
-header nav ul {
+/* ナビゲーションリストのスタイル */
+.nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* 横並びにする */
 }
 
-header nav ul li {
-    margin-right: 20px;
+.nav-list li {
+    margin-right: 20px; /* リストアイテム間のスペース */
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.nav-list a {
+    color: #fff; /* リンクの文字色 */
+    text-decoration: none; /* 下線を削除 */
+    padding: 10px 15px; /* リンク内の余白 */
+    display: block; /* リンクをブロック要素にして全体をクリック可能にする */
+    border-radius: 3px; /* リンクの角を丸くする */
+    transition: background-color 0.3s, color 0.3s; /* ホバー時のスムーズな変化 */
 }
 
-/* メインコンテンツのスタイル */
-main {
-    padding: 60px 20px 20px; /* ヘッダー分のスペースを確保 */
+.nav-list a:hover {
+    background-color: #555; /* ホバー時の背景色 */
+    color: #ffd700; /* ホバー時の文字色 */
 }
 
-/* フッターのスタイル */
-footer {
+
+
+
+
+
+.about {
+    font-size: 2rem;
+    padding-left: 2rem;
+
+
+}
+.about p {
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+.p1 {
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+.p2 {
+    font-size: 5rem;
+    padding-left: 5rem;
+}
+.p3 {
+    font-size: 2rem;
+    padding-left: 5rem;
+}
+
+
+/*フッター*/
+.page-footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
+    background-size: cover;
+
+
+}
+
+
+
+.table {
+    margin: 3.5rem 0;
     width: 100%;
-    bottom: 0;
-    left: 0;
+    text-align: center;
+}
+
+
+
+
+.th {
+    background: #bcbcc8;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+
+
+
+.td {
+    padding: .75rem 1rem 1.75rem;
+}
+
+
+.container a {
+    color: #bcbcc8; /* リンクの文字色 */
+    text-decoration: none; /* 下線を削除 */
+    padding: 10px 15px; /* リンク内の余白 */
+    display: block; /* リンクをブロック要素にして全体をクリック可能にする */
+    border-radius: 3px; /* リンクの角を丸くする */
+    transition: background-color 0.3s, color 0.3s;
 }

@@ -6,9 +6,25 @@ html {
 }
 
 .body {
-    background-image: url('Image.png');
+    height:100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
     background-size: cover;
-    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cover-home {
+    background-image: url('Image.png');
+}
+
+.h2 {
+    justify-content: center;
+    align-items: center;
 }
 
 /*ヘッダー*/
@@ -73,22 +89,10 @@ html {
 
 
 }
-.about p {
-    font-size: 2rem;
-    padding-left: 5rem;
+p {
+    text-align: justify;
 }
-.p1 {
-    font-size: 2rem;
-    padding-left: 5rem;
-}
-.p2 {
-    font-size: 5rem;
-    padding-left: 5rem;
-}
-.p3 {
-    font-size: 2rem;
-    padding-left: 5rem;
-}
+
 
 
 /*フッター*/
@@ -131,4 +135,18 @@ html {
     display: block; /* リンクをブロック要素にして全体をクリック可能にする */
     border-radius: 3px; /* リンクの角を丸くする */
     transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list a {
+    color: #fff; /* リンクの文字色 */
+    text-decoration: none; /* 下線を削除 */
+    padding: 10px 15px; /* リンク内の余白 */
+    display: block; /* リンクをブロック要素にして全体をクリック可能にする */
+    border-radius: 3px; /* リンクの角を丸くする */
+    transition: background-color 0.3s, color 0.3s; /* ホバー時のスムーズな変化 */
+}
+
+.nav-list a:hover {
+    background-color: #555; /* ホバー時の背景色 */
+    color: #ffd700; /* ホバー時の文字色 */
 }

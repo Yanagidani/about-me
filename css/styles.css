@@ -356,3 +356,18 @@ footer p {
     transition: background-color 0.3s, transform 0.2s;
 
 }
+
+/* スマートフォン */
+@media (max-width: 600px) {
+    header, footer {
+        font-size: 0.8em;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}

@@ -1,6 +1,6 @@
 # about-me
 
-サイトURL:https://github.com/Yanagidani/about-me
+サイトURL:https://github.com/Yanagidani/about-me.git
 
 このサイトは私の自己紹介が書いてあるサイトです。
 私はマカロン、絵などが好きなので、それをホームと概要のところに写真を入れこみました。

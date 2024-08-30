@@ -4,95 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about-me - about</title>
+    <!--リセットcss-->
+
+
     <!--css-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
     <!--Googleフォント-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?familly=Lora&display=swap" rel=""stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 </head>
 <body>
-    <div class="cover cover-home">
-        <div class="page-header">
-            <header class="header">
-                <div class="container">
-                    <h1>About-me</h1>
-                    <nav class='nav-container'>
-                        <ul class="nav-list">
-                            <li><a href="home.html">ホーム</a></li>
-                            <li><a href="about.html">概要</a></li>
-                            <li><a href="hobby.html">趣味</a></li>
-                            <li><a href="like.html">好きなもの</a></li>
-                            <li><a href="contact.html">お問い合わせ</a></li>
-                        </ul>
-                    </nav>
+    <div class="body">
+        <div class="cover cover-home">
+            <div class="menu-container">
+                <div class="menu-icon" id="menuIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-            </header>
-        </div>
-    
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li><a href="home.html">ホーム</a></li>
+                        <li><a href="about.html">概要</a></li>
+                        <li><a href="hobby.html">趣味</a></li>
+                        <li><a href="like.html">好きなもの</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
 
-        <div class="image-1">
-            <img src=" URL を張る" alt="ホームの画像">
-        </div>
 
-        <section id="概要">
-            <h2 class="heading=large font-english">about-me</h2>
+                <div class="page-header">
+                    <header class="header">
+                        <div class="container">
+                            <h1>About-me</h1>
+                            <nav class='nav-container'>
+                                <ul class="nav-list">
+                                    <li><a href="home.html">ホーム</a></li>
+                                    <li><a href="about.html">概要</a></li>
+                                    <li><a href="hobby.html">趣味</a></li>
+                                    <li><a href="like.html">好きなもの</a></li>
+                                    <li><a href="contact.html">お問い合わせ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+
             <style>
                 p {
-                    font-size: 36px; 
-                    line-height: 1.6;
-                    margin: 20px 0;
-                    padding: 10px;
-
+                    font-size: 36px; /* フォントサイズを24pxに設定 */
+                    line-height: 1.6; /* 行間を調整して読みやすく */
+                    margin: 20px 0; /* 上下に余白を追加 */
+                    padding: 10px; /* 内部余白を追加 */
                 }
             </style>
-            <br>
-            <table>
-                <tr>
-                    <th>名前</th>
-                    <td>柳谷 果音</td>
-                </tr>
-                <tr>
-                    <th>出身地</th>
-                    <td>滋賀県</td>
-                </tr>
-                <tr>
-                    <th>誕生日</th>
-                    <td>12/28</td>
-                </tr>
-                <tr>
-                    <th>好きな食べ物</th>
-                    <td>オムライス、マカロン</td>
-                </tr>
-                <tr>
-                    <th>趣味</th>
-                    <td>漫画、アニメ、ゲーム、絵を描く</td>
-                </tr>
-                <tr>
-                    <th>学校/専攻</th>
-                    <td>京都デザイン＆テクノロジー専門学校
-                        ホワイトハッカー専攻
-                    </td>
-                </tr>
-            </table>
 
 
-        </section>
-
-        <footer class="page-footer">
-            <div class="container">
-                <ul class="nav-list">
-                    <li><a href="home.html">ホーム</a></li>
-                    <li><a href="about.html">概要</a></li>
-                    <li><a href="hobby.html">趣味</a></li>
-                    <li><a href="like.html">好きなもの</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
+            <div class="slider">
+                <div class="slides">
+                    <img src="makaron-home.png" alt="マカロン">
+                    <img src="itaria.png" alt="イタリア">
+                    <img src="e.png" alt="絵">
+                </div>
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
             </div>
-        </footer>
+
+
+            <section id="概要">
+                <h2 class="heading=large font-english">about-me</h2>
+                <style>
+                    p {
+                        line-height: 1.6;
+                        margin: 20px 500px;
+                        padding: 10px;
+                        text-align: left;
+                        font-size: 50px;
+
+
+                    }
+                </style>
+                <br>
+
+
+            
+                
+                <p>
+                    <strong>名前：</strong>    柳谷 果音
+                </p>
+                
+                <p>
+                    <strong>出身地：</strong>    滋賀県
+                </p>
+                <p>
+                    <strong>誕生日：</strong>    12月28日
+                </p>
+                <p>
+                    <strong>好きな食べもの：</strong> マカロン、オムライス
+                </p>
+                <p>
+                    <strong>好きなもの：</strong>  漫画、アニメ、絵を描く、にじさんじ
+                </p>
+                <p>
+                    <strong>所属：</strong>  京都デザイン＆テクノロジー専門学校
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ホワイトハッカ－専攻
+                </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            
+
+
+
+
+
+
+            </section>
+    </div>
+
+
+    <style>
+        p{
+            font-size: 20px;
+        
+        }
+    </style>
+
+
+    <footer>
+        <p>&copy; 2024 about-me</p>
+    </footer>
+
+
+
+
+
+
 
 
     </div>
+
+
+
 
     <script src="js/scripts.js"></script>
 </body>

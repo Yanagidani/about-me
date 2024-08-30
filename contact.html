@@ -12,59 +12,82 @@
     <link href="https://fonts.googleapis.com/css2?familly=Lora&display=swap" rel=""stylesheet>
 </head>
 <body>
-    <div class="cover cover-home">
-        <div class="page-header">
-            <header class="header">
-                <div class="container">
-                    <h1>About-me</h1>
-                    <nav class='nav-container'>
-                        <ul class="nav-list">
-                            <li><a href="home.html">ホーム</a></li>
-                            <li><a href="about.html">概要</a></li>
-                            <li><a href="hobby.html">趣味</a></li>
-                            <li><a href="like.html">好きなもの</a></li>
-                            <li><a href="contact.html">お問い合わせ</a></li>
-                        </ul>
-                    </nav>
+    <div class="body">
+        <div class="cover cover-home">
+            <div class="menu-container">
+                <div class="menu-icon" id="menuIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-            </header>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li><a href="home.html">ホーム</a></li>
+                        <li><a href="about.html">概要</a></li>
+                        <li><a href="hobby.html">趣味</a></li>
+                        <li><a href="like.html">好きなもの</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
 
-        <div class="image-1">
-            <img src=" URL を張る" alt="ホームの画像">
-        </div>
-        
-        <section id="お問い合わせ">
-            <h2 class="heading=large font-english">Contact</h2>
-            <style>
-                p {
-                    font-size: 36px; /* フォントサイズを24pxに設定 */
-                    line-height: 1.6; /* 行間を調整して読みやすく */
-                    margin: 20px 0; /* 上下に余白を追加 */
-                    padding: 10px; /* 内部余白を追加 */
-                }
-            </style>
-            <p>
-                以下の方法でご連絡お願いします。
-            </p>
-            <ul>
-                <li>Email:<a href="メールのURLを張る"></a></li>
-                <li>Instagram: <a href="インスタのURLを張る"></a></li>
-            </ul>
 
-        </section>
-
-        <footer class="page-footer">
-            <div class="container">
-                <ul>
-                    <li><a href="home.html">ホーム</a></li>
-                    <li><a href="about.html">概要</a></li>
-                    <li><a href="hobby.html">趣味</a></li>
-                    <li><a href="like.html">好きなもの</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
+                    <div class="page-header">
+                        <header class="header">
+                            <div class="container">
+                                <h1>About-me</h1>
+                                <nav class='nav-container'>
+                                    <ul class="nav-list">
+                                        <li><a href="home.html">ホーム</a></li>
+                                        <li><a href="about.html">概要</a></li>
+                                        <li><a href="hobby.html">趣味</a></li>
+                                        <li><a href="like.html">好きなもの</a></li>
+                                        <li><a href="contact.html">お問い合わせ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                    </header>
             </div>
-        </footer>
+    
+            <section id="お問い合わせ">
+                <div class="in" >
+                    <h2 class="heading=large font-english">Contact</h2>
+                    <style>
+                        p {
+                            font-size: 36px; /* フォントサイズを24pxに設定 */
+                            line-height: 1.6; /* 行間を調整して読みやすく */
+                            margin: 20px 0; /* 上下に余白を追加 */
+                            padding: 10px; /* 内部余白を追加 */
+                        }
+                    </style>
+                </div>
+            </section>
+
+
+            <section class="contact-form">
+                <h2>お問い合わせ</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <button type="submit">送信</button>
+                </form>
+            </section>
     </div>
+
+
+    <footer>
+        <p>&copy; 2024 about-me</p>
+    </footer>
+    </div>
+
+
+
 
     <script src="js/scripts.js"></script>
 </body>

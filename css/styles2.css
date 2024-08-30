@@ -219,7 +219,7 @@ p {
     display: inline-block;
     position: absolute;
     top: 276px; /* ヘッダーの高さに応じて調整 */
-    left: 1445px;
+    left: 2650px;
 }
 
 
@@ -237,7 +237,7 @@ p {
     background: #333;
     position: absolute;
     top: 276px; /* ヘッダーの高さに応じて調整 */
-    left: 990px;
+    left: 2190px;
     width: 450px;
     z-index: 1000; /* メニューが他の要素の上に表示されるようにする */
 }
@@ -272,8 +272,8 @@ p {
 
 .slider {
     position: relative;
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1000px;
     overflow: hidden;
     margin: auto; /* 中央揃え */
     display: flex; /* 横方向の中央揃え */
@@ -288,7 +288,6 @@ p {
 
 .slides img {
     width: 100%;
-    flex-shrink: 0;
 }
 
 

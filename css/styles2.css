@@ -344,7 +344,20 @@ button {
     right: 10px;
 }
 
+/* スマートフォン */
+@media (max-width: 600px) {
+    header, footer {
+        font-size: 0.8em;
+    }
 
+    main {
+        padding: 0.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
 
 
 
